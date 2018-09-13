@@ -153,7 +153,7 @@ export const gotoState = stateIndex => ({
 });
 ```
 
-准备工作都已经做完，接下来咱们直接在 react 组件内加上出发代码即可`components/History.js`
+准备工作都已经做完，接下来咱们直接在 react 组件内加上触发代码即可`components/History.js`
 
 ```js
 const History = ({ past, futrue, present, redo, undo, gotoState }) => {
