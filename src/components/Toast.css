@@ -1,0 +1,23 @@
+.toast-father {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 10%;
+  width: 100%;
+  z-index: 10000;
+  /* transition: opacity 0.5s linear;
+  opacity: 0 */
+}
+.toast {
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  word-break: break-all;
+  text-align: center;
+  line-height: 34px;
+  padding: 7px 24px;
+  border-radius: 10px;
+  max-width: 60%;
+  background: rgba(0, 0, 0, 0.8);
+  min-height: 34px;
+}

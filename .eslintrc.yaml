@@ -1,0 +1,38 @@
+extends:
+  - airbnb
+  - prettier #忽略所有代码格式相关的规则，格式化由prettier控制
+parser: babel-eslint
+globals:
+  Promise: true
+  fetch: true
+env:
+  browser: true
+rules:
+  global-require: off
+  import/no-unresolved: off
+  import/extensions: off
+  import/no-extraneous-dependencies: off
+  no-use-before-define: warn
+  class-methods-use-this: warn
+  react/jsx-filename-extension: off
+  react/prop-types: warn
+  react/forbid-prop-types: off
+  react/require-default-props: off
+  react/sort-comp: off
+  jsx-a11y/href-no-hash: off
+  import/prefer-default-export: 0
+  prefer-promise-reject-errors: off
+  jsx-a11y/anchor-is-valid: off
+  no-return-assign: off
+  linebreak-style: ['error', 'windows']
+  # comma-dangle:
+  #   - error
+  #   - arrays: always-multiline
+  #     objects: always-multiline
+  #     imports: always-multiline
+  #     exports: always-multiline
+  #     functions: never
+  max-len:
+    - error
+    - code: 160
+      ignoreStrings: true

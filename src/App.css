@@ -1,0 +1,26 @@
+.container {}
+
+.main {}
+
+.base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #333;
+}
+
+.header {
+    composes: base;
+    height: 80px;
+    font-size: 36px;
+}
+
+.footer {
+    composes: base;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    font-size: 12px;
+}
