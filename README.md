@@ -38,7 +38,7 @@ export default {
 };
 ```
 
-我们把状态分为三个时间段：过去，现在（只有一个状态），将来。gotoState 函数则是用来做时间旅行的。
+我们把状态分为三个时间段：过去，现在（只有一个状态），将来。gotoState 函数则是用来做时间旅行的，他的实现方式就是整合所有状态 allState，重新分配，present 前面是 past，后面是 future。
 
 那么我们如何去存放每一次变更的状态呢？我们需要找到一个入口，这个入口必须是每次触发状态变更都会经过的地方。而触发状态变更唯一的方式就是`dispatch(action)`，想想，这样的地方好像只有一个地方,看过 redux 源码的同学肯定就是不陌生，那就是 combineReducer 生成的 reducers 纯函数。
 combineReducer 负责整合多个 reducer，最终返回一个能够处理所有 action 的 reducers。让我们大致简单实现一下：
