@@ -17,7 +17,7 @@
 
 ## 开始
 
-### 项目地址：(github)[https://github.com/wuyafeiJS/redux-timetravel]
+### 项目地址：[github](https://github.com/wuyafeiJS/redux-timetravel)
 
 预览：
 ![](src/assets/images/preview.gif)
